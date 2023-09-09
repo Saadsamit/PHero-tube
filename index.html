@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero-tube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .inter{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="inter">
+    <header class="container mx-auto border-b py-7 mb-7">
+        <div class="navbar md:flex-row flex-col justify-between">
+            <div class="md:py-0 py-2">
+              <a href="#">
+                <img src="./images/Logo.png" alt="">
+              </a>
+            </div>
+            <div class="md:py-0 py-2">
+                <button id="sortBtn" class="btn capitalize text-[#252525] hover:bg-[#FF1F3D] hover:text-white">Sort by view</button>
+            </div>
+            <div class="md:py-0 py-2">
+              <a class="btn bg-[#FF1F3D] text-white hover:bg-[#FF1F3D] capitalize" href="blog.html">Blog</a>
+            </div>
+          </div>
+    </header>
+    <main class="container mx-auto">
+        <div id="titleContainer" class="mb-7 flex flex-wrap justify-center"></div>
+        <div id="cardContainer" class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4"></div>
+        <div id="error">
+          <div class="flex justify-center flex-col items-center">
+            <img src="./images/Icon.png" alt="">
+            <h4 class="text-[#171717] text-3xl font-bold text-center">Oops!! Sorry, There is no <br> content here</h4>
+          </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
